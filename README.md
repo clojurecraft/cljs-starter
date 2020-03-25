@@ -9,6 +9,9 @@ A minimal clojurescript + reagent project (using shadow-cljs)
 - clone this repo
 - in terminal, from within this repo:
     - `npm install`
-    - `shadow-cljs watch dev`
+    - `shadow-cljs watch dev` *
 - open http://localhost:8080
 - edit `./src/demo/core.cljs`
+
+
+* if you're using VSCode with Calva, you can nREPL Jack In to the project instead
