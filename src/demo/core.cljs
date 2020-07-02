@@ -1,22 +1,15 @@
-(ns demo.core
-  (:require
-    [reagent.dom :as rdom]
-    [reagent.core :as r]))
+(ns demo.core)
 
-(defonce state (r/atom {:counter 1}))
+(defn greeting []
+  (str "hello " (rand-nth ["world" "clojure" "clojurescript" "you"])))
 
-(defn app-view []
-  [:div
-   [:h1 "Hello World!"]
-   (:counter @state)
-   [:button {:on-click (fn []
-                         (swap! state update :counter inc))}
-    "+1"]])
+#_(+ 1 2)
 
-(defn render! []
-  (rdom/render
-    [app-view]
-    (js/document.getElementById "app")))
+#_(greeting)
+
+#_(println (greeting))
+
+#_(js/alert (greeting))
 
 
 
