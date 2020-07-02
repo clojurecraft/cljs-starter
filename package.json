@@ -6,8 +6,11 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
+  "devDependencies": {
+    "shadow-cljs": "2.10.13"
+  },
   "scripts": {
-    "start": "npx shadowcljs watch dev"
+    "start": "npx shadow-cljs watch dev"
   },
   "repository": {
     "type": "git",
