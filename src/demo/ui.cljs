@@ -1,6 +1,5 @@
 (ns demo.ui
  (:require
-    [reagent.dom :as rdom]
     [reagent.core :as r]))
 
 (defonce state (r/atom {:counter 1}))
@@ -13,7 +12,5 @@
                          (swap! state update :counter inc))}
     "+1"]])
 
-(defn render! []
-  (rdom/render
-    [app-view]
-    (js/document.getElementById "app")))
+#_(js/alert "yo")
+#_(+ 1 2)

@@ -5,5 +5,5 @@
  :builds {:dev {:target :browser
                 :output-dir "target/public/dev"
                 :asset-path "/dev"
-                :modules {:main {:init-fn demo.ui/render!}}
-                :devtools {:after-load demo.ui/render!}}}}
+                :modules {:main {:init-fn demo.core/render!}}
+                :devtools {:after-load demo.core/render!}}}}

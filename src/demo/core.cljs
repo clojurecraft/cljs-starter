@@ -1,15 +1,9 @@
-(ns demo.core)
+(ns demo.core
+  (:require
+    [reagent.dom :as rdom]
+    [demo.ui :as ui]))
 
-(defn greeting []
-  (str "hello " (rand-nth ["world" "clojure" "clojurescript" "you"])))
-
-#_(+ 1 2)
-
-#_(greeting)
-
-#_(println (greeting))
-
-#_(js/alert (greeting))
-
-
-
+(defn render! []
+  (rdom/render
+    [ui/app-view]
+    (js/document.getElementById "app")))
